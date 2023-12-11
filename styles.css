@@ -1,0 +1,51 @@
+body{background-image: url(images/background.png); background-size: 300px;}
+
+h1{font-family: Rockwell; font-size: 60px; color:#2e5a88; background-color: ghostwhite; padding-top:10px;text-decoration: underline;
+animation-duration: 2s; animation-name: slidein;}
+
+h2{font-family: Rockwell; font-size: 25px; color:#2e5a88; background-color: ghostwhite;padding-top:10px;
+animation-duration: 2s; animation-name: slidein;}
+
+h3{font-family: Rockwell; font-size: 25px; color:#2e5a88; background-color: ghostwhite;padding-top:10px;
+animation-duration: 2s; animation-name: slidein;}
+
+h4{font-family: Rockwell; font-size: 40px; color:#ffdf00; background-color: ghostwhite;padding-top:10px;
+animation-duration: 2s; animation-name: slidein;}
+
+p{font-family: Rockwell; font-size: 20px;color:#2e5a88 ; background-color: ghostwhite;margin-right: 40%; margin-left: 20%; width: 60%; padding-top:10px;
+animation-duration: 2s; animation-name: article-load; border-style: dashed; border-color: #DB0F27; }
+
+h5{font-family: Rockwell; font-size: 20px;color:#DB0F27 ; background-color: ghostwhite;margin-right: 40%; margin-left: 36%; width: 60%; padding-top:10px;
+animation-duration: 2s; animation-name: article-load; border-style: dashed; border-color: #DB0F27}
+
+li{float:left; text-decoration: none;padding: 5px; list-style-type: none;padding: 40px;}
+
+img {
+  animation: article-load 3s ease-in var(-article-load-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(20px);
+  opacity: 100%;
+}
+
+div{border:1px solod black;  margin-top: 100px; margin-bottom: 100px; margin-right: 120px; margin-left: 120px; background-color: ghostwhite;}
+
+@keyframes slidein{
+	from {
+		margin-left: 20%;
+	}
+	to {margin-left: 0%;
+	}
+}
+  .container {
+  	animation: article-load 0.75s;
+  }
+@keyframes article-load {
+  from {
+  	opacity: 0;
+  	transform: rotateX(-10deg);
+  }
+  to {
+  	opacity: 1;
+  	transform: rotateX(0);
+  }
+} 
